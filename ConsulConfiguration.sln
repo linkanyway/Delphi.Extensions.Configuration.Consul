@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delphi.Extensions.Configuration.Consul", "Delphi.Extensions.Configuration.Consul\Delphi.Extensions.Configuration.Consul.csproj", "{74666ADA-B872-4C6A-99ED-61A49C1C8555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsulRegister", "Delphi.Extensions.Configuration.Consul.Sample\ConsulRegister\ConsulRegister.csproj", "{125AECF6-0B8E-49F5-B3D9-03EAB6F2BBD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74666ADA-B872-4C6A-99ED-61A49C1C8555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74666ADA-B872-4C6A-99ED-61A49C1C8555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74666ADA-B872-4C6A-99ED-61A49C1C8555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74666ADA-B872-4C6A-99ED-61A49C1C8555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125AECF6-0B8E-49F5-B3D9-03EAB6F2BBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125AECF6-0B8E-49F5-B3D9-03EAB6F2BBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125AECF6-0B8E-49F5-B3D9-03EAB6F2BBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125AECF6-0B8E-49F5-B3D9-03EAB6F2BBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

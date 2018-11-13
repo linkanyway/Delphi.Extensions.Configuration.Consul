@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <VersionMajor>1</VersionMajor>
+        <VersionMinor>0</VersionMinor>
+        <VersionPatch>1</VersionPatch>
+        <VersionQuality>2018111201</VersionQuality>
+        <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
+        <!--<VersionSuffix>$(VersionQuality)</VersionSuffix>-->
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <OutputPath>..\..\..\output\release\</OutputPath>
+        <DocumentationFile>..\..\..\output\release\netstandard2.0\Delphi.Extensions.Consul.xml</DocumentationFile>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>..\..\..\output\release\</OutputPath>
+        <DocumentationFile>..\..\..\output\release\netstandard2.0\Delphi.Extensions.Consul.xml</DocumentationFile>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+<ItemGroup>
+    <PackageReference Include="Consul" Version="0.7.2.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+</ItemGroup>
+</Project>
