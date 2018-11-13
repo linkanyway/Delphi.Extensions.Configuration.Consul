@@ -4,3 +4,9 @@
 ![AppVeyor](https://ci.appveyor.com/api/projects/status/gprilrckx116vc9m/branch/dev?svg=true)
 
 a client to sync configuration K/V with consul server
+
+----
+
+### How to use
+
+[Usage](Usage.md)
