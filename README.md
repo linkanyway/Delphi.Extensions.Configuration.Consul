@@ -10,3 +10,6 @@ a client to sync configuration K/V with consul server
 ### How to use
 
 [Usage](Usage.md)
+
+### Todo
+support yml config format
