@@ -34,6 +34,7 @@ namespace Delphi.Extensions.Configuration.Consul
         /// <param name="builder"><seealso cref="IConfigurationBuilder"/>IConfigurationBuilder</param>
         /// <param name="optionsAction">config action<seealso cref="Action{ConsulConfigurationOptions}"/></param>
         /// <param name="token"></param>
+        /// <param name="autoReload"></param>
         /// <returns></returns>
         public static IConfigurationBuilder AddConsul(this IConfigurationBuilder builder,
             Action<ConsulConfigurationOptions> optionsAction, CancellationToken token,bool autoReload

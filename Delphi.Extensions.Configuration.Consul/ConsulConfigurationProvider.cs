@@ -126,9 +126,8 @@ namespace Delphi.Extensions.Configuration.Consul
                 throw new ArgumentOutOfRangeException(nameof(_consulUrls));
             }
 
-          
-                _configurationListeningTask = new Task(ListenToConfigurationChanges);
-            
+
+            _configurationListeningTask = new Task(ListenToConfigurationChanges);
         }
 
         /// <inheritdoc />
@@ -146,20 +145,20 @@ namespace Delphi.Extensions.Configuration.Consul
             foreach (var item in result.Response) //loop all response and convert by each
             {
                 if (item.Key.EndsWith("/") || item.Value == null) continue;
-                
+
                 try
                 {
                     var key = string.IsNullOrEmpty(_prefix)
                         ? item.Key.Replace('/', ':')
                         : item.Key.Substring(_prefix.Length + 1).Replace('/', ':');
                     var value = System.Text.Encoding.UTF8.GetString(item.Value);
-                    
+
                     //todo: check value content type json or yaml???
 
                     var parse = ParserFactory.Build(ConsulConfigValueType.Json);
 
                     var dics = parse.Parse(key, value);
-                 
+
 
                     foreach (var dic in dics)
                     {
@@ -190,7 +189,6 @@ namespace Delphi.Extensions.Configuration.Consul
             if (!_source.ReloadOnChange) return;
             if (_configurationListeningTask.Status == TaskStatus.Created)
                 _configurationListeningTask.Start();
-
         }
 
 
